@@ -5,7 +5,7 @@ import { localStorageService } from "../services/localStorageService";
 // Map team/role to dashboard route
 const dashboardRoute = (user) => {
   if (user.role === "Super Admin") return "/rbac";
-  if (user.team === "Marketing Team" && user.role === "Head") return "/rbac/marketing-head";
+  if (user.team === "Marketing Team" && user.role === "Head") return "/rbac/marketing-head/e-dashboard";
   if (user.team === "Marketing Team" && user.role === "Manager") return "/rbac/marketing-manager";
   if (user.team === "Admission Team" && user.role === "Head") return "/rbac/admission-head";
   if (user.team === "Admission Team" && user.role === "SPOC") return "/rbac/admission-spoc";

@@ -98,6 +98,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DirectorLayout from './features/director/components/DirectorLayout';
 import DirectorWorkspace from './features/director/components/DirectorWorkspace';
 import DirectorSupport from './features/director/components/DirectorSupport';
+import EMarketingHeadDashboard from "./components/EMarketingHeadDashboard";
+import SMarketingHeadDashboard from "./components/SMarketingHeadDashboard";
+import GMarketingHeadDashboard from "./components/GMarketingHeadDashboard";
 
 export default function App() {
   return (
@@ -117,6 +120,9 @@ export default function App() {
         {/* Marketing Head Routes */}
         <Route path="/rbac/marketing-head" element={<MarketingHeadLayout />}>
           <Route index element={<MarketingHeadDashboard />} />
+          <Route path="e-dashboard" element={<EMarketingHeadDashboard />} />
+          <Route path="s-dashboard" element={<SMarketingHeadDashboard />} />
+          <Route path="g-dashboard" element={<GMarketingHeadDashboard />} />
           <Route path="team" element={<MarketingHeadTeamManagement />} />
           <Route path="leads" element={<MarketingHeadLeadsManagement />} />
           <Route path="campaigns" element={<MarketingHeadCampaignManagement />} />

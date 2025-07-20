@@ -51,7 +51,7 @@ const teamProductivity = [
 
 const dashboardKPIs = [
   { label: "Leads Today", value: 120, icon: <FiUsers className="text-blue-500" /> },
-  { label: "Active Campaigns", value: 5, icon: <FiBarChart2 className="text-green-500" /> },
+  { label: "Active Initiative", value: 5, icon: <FiBarChart2 className="text-green-500" /> },
   { label: "ROI Trend", value: "+12%", icon: <FiTrendingUp className="text-green-600" /> },
   { label: "Drop-offs", value: 18, icon: <FiTrendingDown className="text-red-500" /> },
 ];
@@ -82,27 +82,27 @@ export default function MarketingHeadReportingAnalytics() {
       <section className="bg-white dark:bg-gray-800 rounded-xl shadow p-6">
         <div className="flex items-center gap-2 mb-4">
           <FiTrendingUp className="text-blue-500" />
-          <h2 className="text-lg font-semibold">Lead Funnel Analytics</h2>
-          <span className="ml-2 text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded animate-pulse">AI Conversion Score</span>
-          <span className="ml-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded animate-pulse">Funnel Optimization</span>
+          <h2 className="text-lg font-semibold">Lead funnel: Carbon Foorprints analytics</h2>
+          <span className="ml-2 text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded animate-pulse">AI inprovement score</span>
+          <span className="ml-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded animate-pulse">Inititve Optimization</span>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div className="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
-            <h3 className="font-medium mb-2">Inquiries</h3>
+            <h3 className="font-medium mb-2">Emissions</h3>
             <div className="flex gap-4">
               <div>Daily: <span className="font-bold">{leadFunnel.inquiries.daily}</span></div>
               <div>Weekly: <span className="font-bold">{leadFunnel.inquiries.weekly}</span></div>
               <div>Monthly: <span className="font-bold">{leadFunnel.inquiries.monthly}</span></div>
             </div>
-            <div className="mt-2">Lead→App: <span className="font-bold">{(leadFunnel.leadToApp * 100).toFixed(1)}%</span></div>
-            <div>App→Admission: <span className="font-bold">{(leadFunnel.appToAdmission * 100).toFixed(1)}%</span></div>
+            <div className="mt-2">Initiative→Process: <span className="font-bold">{(leadFunnel.leadToApp * 100).toFixed(1)}%</span></div>
+            <div>App→Completion: <span className="font-bold">{(leadFunnel.appToAdmission * 100).toFixed(1)}%</span></div>
           </div>
-          <div className="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
+          {/* <div className="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
             <h3 className="font-medium mb-2">Drop-off Points</h3>
             <div>Inquiry: <span className="font-bold text-red-500">{leadFunnel.dropOff.inquiry}%</span></div>
             <div>Application: <span className="font-bold text-red-500">{leadFunnel.dropOff.application}%</span></div>
             <div>Admission: <span className="font-bold text-red-500">{leadFunnel.dropOff.admission}%</span></div>
-          </div>
+          </div> */}
         </div>
         <div className="overflow-x-auto mb-4">
           <table className="w-full">
@@ -126,18 +126,18 @@ export default function MarketingHeadReportingAnalytics() {
         </div>
         <div className="flex flex-col md:flex-row gap-4">
           <div className="p-4 bg-blue-50 dark:bg-blue-900/30 rounded-lg flex-1">
-            <div className="font-medium mb-1">AI Predictive Lead Conversion Score</div>
+            <div className="font-medium mb-1">AI predictive Improvement score</div>
             <div className="text-2xl font-bold text-blue-600">{(leadFunnel.ai.predictiveScore * 100).toFixed(0)}%</div>
           </div>
           <div className="p-4 bg-green-50 dark:bg-green-900/30 rounded-lg flex-1">
-            <div className="font-medium mb-1">AI Funnel Optimization Suggestion</div>
+            <div className="font-medium mb-1">AI Inititve Optimization Suggestion</div>
             <div className="text-sm text-green-700 dark:text-green-300">{leadFunnel.ai.funnelSuggestion}</div>
           </div>
         </div>
       </section>
 
       {/* 2. Marketing Spend vs ROI */}
-      <section className="bg-white dark:bg-gray-800 rounded-xl shadow p-6">
+      {/* <section className="bg-white dark:bg-gray-800 rounded-xl shadow p-6">
         <div className="flex items-center gap-2 mb-4">
           <FiDollarSign className="text-green-500" />
           <h2 className="text-lg font-semibold">Marketing Spend vs ROI</h2>
@@ -183,10 +183,10 @@ export default function MarketingHeadReportingAnalytics() {
           <div className="font-medium mb-1">AI-powered ROI Estimator</div>
           <div className="text-sm text-green-700 dark:text-green-300">Predicted outcome: $18,000 revenue, 600 leads for next campaign.</div>
         </div>
-      </section>
+      </section> */}
 
       {/* 3. Campaign Performance Reports */}
-      <section className="bg-white dark:bg-gray-800 rounded-xl shadow p-6">
+      {/* <section className="bg-white dark:bg-gray-800 rounded-xl shadow p-6">
         <div className="flex items-center gap-2 mb-4">
           <FiPieChart className="text-purple-500" />
           <h2 className="text-lg font-semibold">Campaign Performance Reports</h2>
@@ -231,7 +231,7 @@ export default function MarketingHeadReportingAnalytics() {
           <div className="font-medium mb-1">AI Campaign Insights</div>
           <div className="text-sm text-blue-700 dark:text-blue-300">Best time to post: Mon 9am. Top campaign: Summer Google Ads.</div>
         </div>
-      </section>
+      </section> */}
 
       {/* 4. Audience & Engagement Analytics */}
       <section className="bg-white dark:bg-gray-800 rounded-xl shadow p-6">
@@ -402,7 +402,7 @@ export default function MarketingHeadReportingAnalytics() {
             <input type="date" className="px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-white" />
           </div>
           <div className="flex flex-col gap-2 flex-1">
-            <label className="text-sm font-medium">Campaign</label>
+            <label className="text-sm font-medium">Initiative</label>
             <select className="px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-white">
               <option>All</option>
               <option>Google Ads</option>
@@ -411,12 +411,12 @@ export default function MarketingHeadReportingAnalytics() {
             </select>
           </div>
           <div className="flex flex-col gap-2 flex-1">
-            <label className="text-sm font-medium">Lead Stage</label>
+            <label className="text-sm font-medium">Status</label>
             <select className="px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-gray-700 dark:text-white">
               <option>All</option>
-              <option>Inquiry</option>
-              <option>Application</option>
-              <option>Admission</option>
+              <option>Active</option>
+              <option>Planning</option>
+              <option>Completed</option>
             </select>
           </div>
           <div className="flex flex-col gap-2 flex-1">

@@ -7,14 +7,14 @@ const teamMembers = [
   {
     id: 1,
     name: "Abdullah Al-Rashid",
-    role: "Campaign Manager",
+    role: "Life Cycle Assessment Specialist",
     email: "abdullah.alrashid@mbsc.edu.sa",
     phone: "+1 234 567 890",
     performance: 92,
     status: "Active",
     avatar: "👨‍💼",
-    skills: ["Digital Marketing", "Content Strategy", "Social Media"],
-    projects: ["Q2 Campaign", "Brand Refresh"],
+    skills: ["Life Cycle Assessment", "Content Strategy", "Social Media"],
+    projects: ["Q2 Initiative", "Brand Refresh"],
   },
   {
     id: 2,
@@ -25,29 +25,29 @@ const teamMembers = [
     performance: 88,
     status: "Active",
     avatar: "👩‍💼",
-    skills: ["Content Creation", "SEO", "Copywriting"],
+    skills: ["ESG IoT", "Energy Modelling", "Green Building"],
     projects: ["Blog Series", "Email Campaign"],
   },
   {
     id: 3,
     name: "Khalid Al-Sayed",
-    role: "Digital Marketer",
+    role: "ESG IoT and smart Tech engineer",
     email: "khalid.alsayed@mbsc.edu.sa",
     phone: "+1 234 567 892",
     performance: 85,
     status: "On Leave",
     avatar: "👨‍💼",
     skills: ["Social Media", "Community Management", "Analytics"],
-    projects: ["Social Campaign", "Influencer Outreach"],
+    projects: ["Social Initiatives", "Influencer Outreach"],
   },
 ];
 
 // Demo data for performance metrics
 const performanceMetrics = [
-  { metric: "Lead Generation", target: 1000, achieved: 850 },
-  { metric: "Conversion Rate", target: 35, achieved: 32 },
-  { metric: "Campaign ROI", target: 300, achieved: 285 },
-  { metric: "Social Engagement", target: 5000, achieved: 4800 },
+  { metric: "Emissions Reduction", target: 1000, achieved: 850 },
+  { metric: "Energy Efficiency", target: 35, achieved: 32 },
+  { metric: "Water Conservation", target: 300, achieved: 285 },
+  { metric: "Waste Reduction", target: 5000, achieved: 4800 },
 ];
 
 export default function MarketingHeadTeamManagement() {
@@ -138,10 +138,10 @@ export default function MarketingHeadTeamManagement() {
           <div>
             <h3 className="font-medium mb-1">By Role</h3>
             <ul className="space-y-1 text-sm">
-              <li>Campaign Managers: Abdullah Al-Rashid</li>
-              <li>Digital Marketers: Khalid Al-Sayed</li>
-              <li>Content Strategists: Noura Al-Zahra</li>
-              <li>Admission Counselors: (none)</li>
+              <li>Life Cycle Assessment Specialist: Abdullah Al-Rashid</li>
+              <li>ESG IoT and smart Tech engineer: Khalid Al-Sayed</li>
+              <li>Content Strategist: Noura Al-Zahra</li>
+              {/* <li>Admission Counselors: (none)</li> */}
             </ul>
           </div>
           <div>
@@ -155,10 +155,10 @@ export default function MarketingHeadTeamManagement() {
       </section>
 
       {/* 2. Role-based Access & Permissions */}
-      <section className="bg-white dark:bg-gray-800 rounded-xl shadow p-6">
-        <div className="flex items-center gap-2 mb-2"><FiSettings className="text-purple-500" /><h2 className="text-lg font-semibold">Role-based Access & Permissions</h2></div>
+      {/* <section className="bg-white dark:bg-gray-800 rounded-xl shadow p-6"> */}
+       {/* <div className="flex items-center gap-2 mb-2"><FiSettings className="text-purple-500" /><h2 className="text-lg font-semibold">Role-based Access & Permissions</h2></div> */}
         {/* Demo: Table of roles and permissions */}
-        <table className="w-full text-sm mt-2">
+        {/* <table className="w-full text-sm mt-2">
           <thead>
             <tr className="text-left border-b dark:border-gray-700">
               <th>Member</th><th>Role</th><th>Permissions</th><th>Actions</th>
@@ -171,7 +171,7 @@ export default function MarketingHeadTeamManagement() {
           </tbody>
         </table>
         <div className="mt-2 text-xs text-purple-600">AI: Suggests permission template for new role</div>
-      </section>
+      </section> */}
 
       {/* 3. Task Assignment & Tracking */}
       <section className="bg-white dark:bg-gray-800 rounded-xl shadow p-6">
@@ -180,7 +180,7 @@ export default function MarketingHeadTeamManagement() {
         <table className="w-full text-sm mt-2">
           <thead><tr><th>Task</th><th>Assigned To</th><th>Status</th><th>Progress</th><th>Deadline</th><th>Actions</th></tr></thead>
           <tbody>
-            <tr><td>Launch Q2 Campaign</td><td>Abdullah Al-Rashid</td><td>In Progress</td><td>70%</td><td>2024-07-10</td><td><button className="text-blue-600">Edit</button></td></tr>
+            <tr><td>Launch Q2 Initiative</td><td>Abdullah Al-Rashid</td><td>In Progress</td><td>70%</td><td>2024-07-10</td><td><button className="text-blue-600">Edit</button></td></tr>
             <tr><td>Write Blog Series</td><td>Noura Al-Zahra</td><td>Pending</td><td>0%</td><td>2024-07-12</td><td><button className="text-blue-600">Edit</button></td></tr>
             <tr><td>Social Media Audit</td><td>Khalid Al-Sayed</td><td>Completed</td><td>100%</td><td>2024-06-30</td><td><button className="text-blue-600">Edit</button></td></tr>
           </tbody>
@@ -196,9 +196,9 @@ export default function MarketingHeadTeamManagement() {
           <div>
             <h3 className="font-medium mb-1">KPIs</h3>
             <ul className="space-y-1 text-sm">
-              <li>Leads Handled: Abdullah Al-Rashid (120), Noura Al-Zahra (90), Khalid Al-Sayed (80)</li>
-              <li>Conversions: Abdullah Al-Rashid (30), Noura Al-Zahra (25), Khalid Al-Sayed (20)</li>
-              <li>Campaign ROI: Abdullah Al-Rashid (3.2x), Noura Al-Zahra (2.8x), Khalid Al-Sayed (2.5x)</li>
+              <li>Social Media Handled: Abdullah Al-Rashid (120), Noura Al-Zahra (90), Khalid Al-Sayed (80)</li>
+              <li>Governance: Abdullah Al-Rashid (30), Noura Al-Zahra (25), Khalid Al-Sayed (20)</li>
+              <li>Initiative ROI: Abdullah Al-Rashid (3.2x), Noura Al-Zahra (2.8x), Khalid Al-Sayed (2.5x)</li>
             </ul>
           </div>
           <div>
@@ -218,7 +218,7 @@ export default function MarketingHeadTeamManagement() {
         <div className="flex items-center gap-2 mb-2"><FiBookOpen className="text-yellow-500" /><h2 className="text-lg font-semibold">Training & Development Tracker</h2><span className="ml-2 text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded animate-pulse">AI Recommendations</span></div>
         {/* Demo: Training attendance, badges, feedback */}
         <ul className="space-y-1 text-sm">
-          <li>Abdullah Al-Rashid: Attended "Digital Marketing Bootcamp" <span className="ml-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Certified</span></li>
+          <li>Abdullah Al-Rashid: Attended "Digital Initiative Bootcamp" <span className="ml-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Certified</span></li>
           <li>Noura Al-Zahra: Attended "Content Strategy Seminar" <span className="ml-2 text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded">In Progress</span></li>
           <li>Khalid Al-Sayed: Not attended recent training</li>
         </ul>
@@ -230,7 +230,7 @@ export default function MarketingHeadTeamManagement() {
         <div className="flex items-center gap-2 mb-2"><FiMessageCircle className="text-blue-400" /><h2 className="text-lg font-semibold">Communication Center</h2><span className="ml-2 text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded animate-pulse">AI Summary</span></div>
         {/* Demo: Announcements, reminders, briefs */}
         <ul className="space-y-1 text-sm">
-          <li>Announcement: "Q2 Campaign Launch on July 10"</li>
+          <li>Announcement: "Q2 Initiative Launch on July 10"</li>
           <li>Reminder: "Submit weekly report by Friday"</li>
           <li>Brief: "SOP for Event Coordination uploaded"</li>
         </ul>
@@ -242,7 +242,7 @@ export default function MarketingHeadTeamManagement() {
         <div className="flex items-center gap-2 mb-2"><FiAlertCircle className="text-red-500" /><h2 className="text-lg font-semibold">Issue Escalation Panel</h2><span className="ml-2 text-xs bg-red-100 text-red-700 px-2 py-1 rounded animate-pulse">AI Prioritization</span></div>
         {/* Demo: Issue list, status, escalation */}
         <ul className="space-y-1 text-sm">
-          <li>Khalid Al-Sayed: "Cannot access campaign analytics" <span className="ml-2 text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded">Pending</span></li>
+          <li>Khalid Al-Sayed: "Cannot access Initiative analytics" <span className="ml-2 text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded">Pending</span></li>
           <li>Noura Al-Zahra: "Need approval for blog series" <span className="ml-2 text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Resolved</span></li>
         </ul>
         <div className="mt-2 text-xs text-red-600 animate-bounce">AI: Prioritizes Khalid Al-Sayed's issue as urgent</div>
@@ -265,9 +265,9 @@ export default function MarketingHeadTeamManagement() {
         <div className="flex items-center gap-2 mb-2"><FiTarget className="text-purple-500" /><h2 className="text-lg font-semibold">Goal Planning & Reviews</h2><span className="ml-2 text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded animate-pulse">AI Goal Setting</span></div>
         {/* Demo: Goals, reviews, feedback */}
         <ul className="space-y-1 text-sm">
-          <li>Abdullah Al-Rashid: July Goal - 40 conversions</li>
+          <li>Abdullah Al-Rashid: July Goal - 40 Accounts</li>
           <li>Noura Al-Zahra: July Goal - 10 blog posts</li>
-          <li>Khalid Al-Sayed: July Goal - 20 social campaigns</li>
+          <li>Khalid Al-Sayed: July Goal - 20 social Initiative</li>
         </ul>
         <div className="mt-2 text-xs text-purple-600 animate-bounce">AI: Suggests higher goal for Abdullah Al-Rashid based on past performance</div>
       </section>
